@@ -17,16 +17,20 @@
 		<h1>
 			Ingrese texto a buscar:
 		</h1>
-		<form action="buscar.php" method="POST">
+		<form action="buscar.php" method="get">
 		<input type="text" name="busqueda">
-		<input type="submit" name="enviar">
-		<select name="tipo">
-			<option value="ventas">compra-venta</option>
-			<option value="servicios">servicios</option>
+		
+		<select name = "tipo">
+			
+			<option value = "ventas">compra-venta</option>
+			<option value = "servicios">servicios</option>
+
 		</select>
+		<input type="submit" name="enviar" >
 		<p>
 			ej:'plomero','niñera','limpieza'
 		</p>
+
 		</form>
 	</div>
 </body>
