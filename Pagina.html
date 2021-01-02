@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class= "div1">
+	<h1>
+		Header Clasificados
+	</h1>
+	</div>
+	<div class="buscador">
+		
+		<h1>
+			Ingrese texto a buscar:
+		</h1>
+		<form action="buscar.php" method="POST">
+		<input type="text" name="busqueda">
+		<input type="submit" name="enviar">
+		<select name="tipo">
+			<option value="ventas">compra-venta</option>
+			<option value="servicios">servicios</option>
+		</select>
+		<p>
+			ej:'plomero','niñera','limpieza'
+		</p>
+		</form>
+	</div>
+</body>
+</html>

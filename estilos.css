@@ -1,0 +1,41 @@
+.div1 h1{
+
+	font-size: 30px;
+	
+	height: 20px;
+}
+.div1{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #2E69FF;
+	height: 100px;
+	vertical-align: middle;
+
+}
+.buscador{
+
+	display: inline-block;
+	background-color: #6767ED;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 10px;
+}
+.buscador h1{
+	display: inline-block;
+	width: 30%;
+	font-size: 20px;
+	margin-left: 10%;
+}
+.buscador p{
+	display: inline-block;
+	width: 60%;
+	margin-left: 10%;
+}
+.buscador input[type="text"]{
+
+	background-color: red;
+	margin-left: 10%;
+	border-radius: 3px;
+}
