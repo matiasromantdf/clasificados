@@ -1,0 +1,19 @@
+div{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border: solid;
+	padding: 10px;
+	margin: 10px;
+	background-color: #6173F9;
+	box-shadow: 2px 2px 5px black;
+	border-radius: 5px;
+}
+.nombre{
+	margin: 0 auto;
+	color: red;
+	font-size: 20px;
+}
+body{
+	background-color: #27868C
+}

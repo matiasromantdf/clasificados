@@ -35,7 +35,10 @@
 }
 .buscador input[type="text"]{
 
-	background-color: red;
+	border-style: none;
 	margin-left: 10%;
 	border-radius: 3px;
+}
+.buscador input[type="submit"]{
+	border-radius: 5px;
 }

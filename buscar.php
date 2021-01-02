@@ -6,6 +6,7 @@ $rubro = $_GET['tipo'];
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<link rel="stylesheet" type="text/css" href="estilos-resultados.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Resultados de búsqueda</title>
@@ -28,11 +29,12 @@ $rubro = $_GET['tipo'];
 		}
 		while($fila=mysqli_fetch_array($resultado)){
 
-			echo '<div>'. $fila['referencia'] .'<br>';
+			echo '<div><p class="nombre">'. $fila['referencia'] .'</p><br>';
 			echo 'telefono: '.$fila['telefono'];	
 			echo '</div>';
 		}
 
 	 ?>
+	 <a href="pagina.html">volver</a>
 </body>
 </html>
