@@ -1,7 +1,7 @@
 div{
-	display: inline-block;
-	width: 100px;
-	height: 100px;
+	float: left;
+	width: 200px;
+	height: 120px;
 	border: solid;
 	padding: 10px;
 	margin: 10px;
@@ -10,10 +10,18 @@ div{
 	border-radius: 5px;
 }
 .nombre{
-	margin: 0 auto;
+	margin-top: 0;
+	margin-bottom: 0;
 	color: red;
 	font-size: 20px;
 }
 body{
 	background-color: #27868C
+}
+footer{
+	width: 100%;
+	float: left;
+	bottom: 0;
+	text-align: center;
+	font-size: 30px;
 }

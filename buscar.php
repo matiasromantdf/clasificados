@@ -12,6 +12,8 @@ $rubro = $_GET['tipo'];
 	<title>Resultados de búsqueda</title>
 </head>
 <body>
+
+	<h1>RESULTADOS DE LA BUSQUEDA</h1>
 	<?php 
 
 		if($rubro=='servicios'){
@@ -35,6 +37,9 @@ $rubro = $_GET['tipo'];
 		}
 
 	 ?>
-	 <a href="pagina.html">volver</a>
+	
 </body>
+<footer>
+	 <a href="pagina.html">volver</a>
+</footer>
 </html>
