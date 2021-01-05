@@ -18,20 +18,18 @@
 			Ingrese texto a buscar:
 		</h1>
 		<form action="buscar.php" method="get">
-		<input type="text" name="busqueda">
-		
-		<select name = "tipo">
+		<input type="text" name="busqueda" placeholder="Ej: jueguetes, plomero, limpieza">
+		<label for="select">seleccione ventas o servicios:</label>
+		<select name = "tipo" class="combo">
 			
 			<option value = "ventas">compra-venta</option>
 			<option value = "servicios">servicios</option>
 
 		</select>
-		<input type="submit" name="enviar" >
-		<p>
-			ej:'plomero','niñera','limpieza'
-		</p>
-
+		<input type="submit" name="enviar"  >
 		</form>
+		
 	</div>
+<button onclick="location.href='alta.php'"> Publicar un aviso</button>
 </body>
 </html>
