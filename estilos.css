@@ -69,10 +69,12 @@ button{
 	margin: 10px;
 	width: 150px;
 	height: 30px;
+	box-shadow: 1px 1px 3px red,
+				-1px -1px 3px red;
 }
 @media screen and (max-width:480px){
 	body {
-		background-color: red; //  en pantallas pequeñas 
+		/*background-color: red; //  en pantallas pequeñas*/ 
 
 	} 
 	.buscador input[type="text"]{

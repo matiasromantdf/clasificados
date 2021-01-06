@@ -1,5 +1,5 @@
 <?php 
-include "conexion.php"; //devuelve el objeto $con
+include "conexion-clasificados.php"; //devuelve el objeto $con
 $texto = $_GET['busqueda'];
 $rubro = $_GET['tipo'];
  ?>
