@@ -32,7 +32,8 @@ $rubro = $_GET['tipo'];
 		while($fila=mysqli_fetch_array($resultado)){
 
 			echo '<div><p class="nombre">'. $fila['referencia'] .'</p><br>';
-			echo 'telefono: '.$fila['telefono'];	
+			echo 'telefono: '.$fila['telefono'].'<br>';
+			echo 'Publicación: '.$fila['etiquetas'];	
 			echo '</div>';
 		}
 
