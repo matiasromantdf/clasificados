@@ -71,16 +71,58 @@ body{
 }
 button{
 
-	margin: 10px;
+	margin-top: 10px;
+	margin-right: 100%;
+	margin-left: 35%;
+	margin-bottom: 10px;
+	float: left;
 	width: 150px;
 	height: 30px;
 	/*box-shadow: 1px 1px 3px blue,
 				-1px -1px 3px blue;*/
 	background-color: #FDF999;
 	border-radius: 10px;	
-	border: none;
+	border: solid 1px;
+	
+
+}
+.item{
 	float: left;
-	margin-left: 35%;
+	width: 80%;
+	max-width: 450px;
+	height: 200px;
+	border: solid;
+	padding: 10px;
+	margin: 10px;
+	background-color: #6173F9;
+	box-shadow: 2px 2px 5px black;
+	border-radius: 5px;
+}
+.pub{
+	float: left;
+	width: 45%;
+}
+.nombre{
+
+	width: 50%;
+	margin-top: 0px;
+	margin-bottom: -10px;
+	color: blue;
+	font-size: 20px;
+}
+img{
+
+	border: solid 1px;
+	margin-top: 0px;
+	width: 50%;
+	float: right;
+	clear: bottom ;
+	min-height: 40%
+	
+
+	
+	
+
 
 }
 @media screen and (max-width:480px){

@@ -1,7 +1,7 @@
 <?php 
 include "conexion-clasificados.php"; //devuelve el objeto $con
 $texto = $_GET['busqueda'];
-$rubro = $_GET['tipo'];
+//$rubro = $_GET['tipo'];
  ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -16,12 +16,12 @@ $rubro = $_GET['tipo'];
 	<h1>RESULTADOS DE LA BUSQUEDA</h1>
 	<?php 
 
-		if($rubro=='servicios'){
-		$sentencia="select * from servicios where etiquetas like '%".$texto."%'";
-		}
-		if($rubro=='ventas'){
-		$sentencia="select * from ventas where etiquetas like '%".$texto."%'";	
-		}
+	//	if($rubro=='servicios'){
+		$sentencia="select * from servicios where etiquetas like '%".$texto."%' and visible='si'";
+	//	}
+	//	if($rubro=='ventas'){
+	//	$sentencia="select * from ventas where etiquetas like '%".$texto."%'";	
+	//	}
 
 		$resultado=mysqli_query($con,$sentencia);
 
@@ -31,7 +31,7 @@ $rubro = $_GET['tipo'];
 		}
 		while($fila=mysqli_fetch_array($resultado)){
 
-			echo '<div><p class="nombre">'. $fila['referencia'] .'</p><br>';
+			echo '<div class="item"><p class="nombre">'. $fila['referencia'] .'</p><br>';
 			echo 'telefono: '.$fila['telefono'].'<br>';
 			echo 'Publicación: '.$fila['etiquetas'];	
 			echo '</div>';
@@ -41,6 +41,6 @@ $rubro = $_GET['tipo'];
 	
 </body>
 <footer>
-	 <a href="pagina.html">volver</a>
+	 <a href="pagina.php">volver</a>
 </footer>
 </html>

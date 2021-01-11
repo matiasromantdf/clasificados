@@ -20,17 +20,44 @@
 		<form action="buscar.php" method="get">
 		<input type="text" name="busqueda" placeholder="Ej: jueguetes, plomero, limpieza" autocomplete="off">
 		<label for="select">seleccione ventas o servicios:</label>
-		<select name = "tipo" class="combo">
+		<!-- <select name = "tipo" class="combo">
 			
 			<option value = "ventas">compra-venta</option>
 			<option value = "servicios">servicios</option>
 
-		</select>
-		<input type="submit" name="enviar"  >
+		</select>-->
+		<input type="submit" name="enviar" value="Buscar!">
 		</form>
 		
 	</div>
-	<br>
+	
 <button onclick="location.href='alta.php'"> Publicar un aviso</button>
+<br>
+<h2>avisos recientes:</h2>
+<?php 
+
+		include "conexion-clasificados.php";
+		$sentencia="select * from servicios where visible='si'";	
+		
+
+		$resultado=mysqli_query($con,$sentencia);
+		
+		while($fila=mysqli_fetch_array($resultado)){
+
+			echo '<div class="item"><p class="nombre">'. $fila['referencia'] .'</p><br>';
+			echo '<p class ="pub"> telefono: '.$fila['telefono'].'</p>';
+			echo '<img class="foto" src="archivos/'.$fila['id'].'.jpeg"></img>';
+			echo '<p class ="pub">Publicación: '.$fila['etiquetas']."</p>";
+			
+
+			echo '</div>';
+		}
+
+	 ?>
+
 </body>
+<footer>
+	<br>
+	
+</footer>
 </html>
