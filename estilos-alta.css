@@ -4,6 +4,7 @@ input{
 	display: inline-block;
 	float: left;
 	margin: 5px;
+	height: 20px;
 }
 
 label{
@@ -18,6 +19,13 @@ input[type="submit"]{
 	margin-left: 20%;
 	margin-top: 30px;
 
+}
+
+input[type="file"]{
+	
+	height: 30px;
+	font-size: 15px
+	
 }
 a{
 	float: left;

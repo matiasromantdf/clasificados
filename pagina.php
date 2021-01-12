@@ -22,8 +22,8 @@
 		</h1>
 		<form action="buscar.php" method="get">
 		<input type="text" name="busqueda" placeholder="Ej: jueguetes, plomero, limpieza" autocomplete="off">
-		<label for="select">seleccione ventas o servicios:</label>
-		<!-- <select name = "tipo" class="combo">
+		<!-- <label for="select">seleccione ventas o servicios:</label>
+		<select name = "tipo" class="combo">
 			
 			<option value = "ventas">compra-venta</option>
 			<option value = "servicios">servicios</option>
@@ -50,7 +50,7 @@
 		while($fila=mysqli_fetch_array($resultado)){
 
 			echo '<div class="item"><p class="nombre">'. $fila['referencia'] .'</p>';
-			echo '<p class ="tel"> telefono: '.$fila['telefono'].'</p>';
+			echo '<p class ="tel">'.$fila['telefono'].'</p>';
 			echo '<a href="https://elgranero.net/clasificados/archivos/'.$fila['id'].'.jpeg"> <img class="foto" src="archivos/'.$fila['id'].'.jpeg"></img></a>';
 			echo '<p class ="pub">Publicación: '.$fila['etiquetas']."</p>";
 			echo '<p class ="precio">'.$fila['precio']."</p>";

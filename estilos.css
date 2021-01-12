@@ -82,13 +82,14 @@ button{
 	margin-left: 35%;
 	margin-bottom: 10px;
 	float: left;
-	width: 150px;
-	height: 30px;
+	width: 200px;
+	height: 40px;
 	/*box-shadow: 1px 1px 3px blue,
 				-1px -1px 3px blue;*/
 	background-color: #FDF999;
 	border-radius: 10px;	
 	border: solid 1px;
+
 	
 
 }
@@ -124,6 +125,11 @@ button{
 	float: left;
 	background-color: #F6FFA7;
 	margin-bottom: 0px;
+	font-family: 'Comic-sans'
+}
+.tel:before {
+	content: "telefono: ";
+	font-family: 'Architects Daughter', cursive;
 }
 .precio:before{
 	content: "$"

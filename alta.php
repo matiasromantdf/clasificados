@@ -27,13 +27,21 @@
 			<input type="file" name="archivo">
 			<br>
 			<br>
-			<input type="submit">
+			<input type="submit" id="boton" onfocus="FbotonOn(this)">
 
 			</form>
 			<a href="pagina.php">volver</a>
 	</div>
 
-	
+<script>
+
+function FbotonOn(objboton) {
+	objboton.value="PROCESANDO...";
+	objboton.disabled=true;
+  
+}
+
+</script>
 	
 </body>
 </html>
