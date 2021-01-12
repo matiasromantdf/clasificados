@@ -27,21 +27,13 @@
 			<input type="file" name="archivo">
 			<br>
 			<br>
-			<input type="submit" id="boton" onfocus="FbotonOn(this)">
+			<input type="submit" id="boton" onclick="this.disabled = true;this.value = 'procesando';this.form.submit();">
 
 			</form>
 			<a href="pagina.php">volver</a>
 	</div>
 
-<script>
 
-function FbotonOn(objboton) {
-	objboton.value="PROCESANDO...";
-	objboton.disabled=true;
-  
-}
-
-</script>
 	
 </body>
 </html>
