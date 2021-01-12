@@ -7,24 +7,33 @@
 	<title>Document</title>
 </head>
 <body>
+	<div class="datos">
 	<form action="procesarnuevo.php" method="post" enctype="multipart/form-data">
-		<div class="datos">
-			<p>Ingrese su nombre</p>
+		
+			<label for="nombre"> su nombre:</label>
 			<input type="text" name="nombre" autocomplete="off">
-			<p>Ingrese su telefono</p>
-			<input type="text" name="telefono" autocomplete="off">
-			<p>ingrese la descripcion de la publicación</p>
+
+			<label for="telefono"> telefono de contacto:</label>
+			<input type="text" name="telefono" autocomplete="off"><br>
+
+			<label for="descripcion"> Describa la publicacion:</label> <br>
 			<textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+
+			<label for="precio"> Precio:</label>
+			<input type="number" name="precio" autocomplete="off">
 			<br>
-			<p>adjuntar una foto</p>
+
+			<label for="file">Adjuntar imagen</label>
 			<input type="file" name="archivo">
 			<br>
 			<br>
 			<input type="submit">
 
-		</div>
+			</form>
+			<a href="pagina.php">volver</a>
+	</div>
 
-	</form>
-	<a href="pagina.php">volver</a>
+	
+	
 </body>
 </html>

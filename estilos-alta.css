@@ -1,10 +1,35 @@
-body{
-	text-align: center;
-	border: solid;
-	background-color: #E3E3EA
+
+
+input{
+	display: inline-block;
+	float: left;
+	margin: 5px;
 }
+
+label{
+	float: left;
+	display: inline-block;
+	width: 50%
+}
+
 input[type="submit"]{
 	width: 200px;
 	height: 50px;
-	
+	margin-left: 20%;
+	margin-top: 30px;
+
+}
+a{
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+}
+.datos{
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+	width: 400px;
+	border: solid;
+	height: 500px;
+	background-color: #C3BBBB
 }

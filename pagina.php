@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +12,7 @@
 <body>
 	<div class= "div1">
 	<h1>
-		Header Clasificados
+		Clasificados
 	</h1>
 	</div>
 	<div class="buscador">
@@ -35,22 +38,26 @@
 <br>
 <h2>avisos recientes:</h2>
 <?php 
-
-		include "conexion-clasificados.php";
-		$sentencia="select * from servicios where visible='si'";	
 		
-
+		include "conexion-clasificados.php";
+		$sentencia="select * from servicios where visible='si' order by id desc";	
+		
+		
+		$con->set_charset('utf8');
+		
 		$resultado=mysqli_query($con,$sentencia);
 		
 		while($fila=mysqli_fetch_array($resultado)){
 
-			echo '<div class="item"><p class="nombre">'. $fila['referencia'] .'</p><br>';
-			echo '<p class ="pub"> telefono: '.$fila['telefono'].'</p>';
-			echo '<img class="foto" src="archivos/'.$fila['id'].'.jpeg"></img>';
+			echo '<div class="item"><p class="nombre">'. $fila['referencia'] .'</p>';
+			echo '<p class ="tel"> telefono: '.$fila['telefono'].'</p>';
+			echo '<a href="https://elgranero.net/clasificados/archivos/'.$fila['id'].'.jpeg"> <img class="foto" src="archivos/'.$fila['id'].'.jpeg"></img></a>';
 			echo '<p class ="pub">Publicación: '.$fila['etiquetas']."</p>";
+			echo '<p class ="precio">'.$fila['precio']."</p>";
 			
 
 			echo '</div>';
+
 		}
 
 	 ?>

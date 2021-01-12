@@ -1,6 +1,7 @@
 .item{
 	float: left;
-	width: 400px;
+	width: 80%;
+	max-width: 450px;
 	height: 200px;
 	border: solid;
 	padding: 10px;
@@ -9,11 +10,28 @@
 	box-shadow: 2px 2px 5px black;
 	border-radius: 5px;
 }
+.pub{
+	float: left;
+	width: 45%;
+}
 .nombre{
-	margin-top: 0;
-	margin-bottom: 0;
+
+	width: 50%;
+	margin-top: 0px;
+	margin-bottom: -10px;
 	color: blue;
 	font-size: 20px;
+}
+img{
+
+	border: solid 1px;
+	margin-top: 0px;
+	width: 50%;
+	float: right;
+	clear: bottom ;
+	min-height: 60%;
+	max-height: 150px;
+
 }
 body{
 	background-color: #D6D7D9;

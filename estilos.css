@@ -1,18 +1,23 @@
 .div1 h1{
 
-	font-size: 30px;
-	
+
+	font-family: 'Open Sans', sans-serif;
 	height: 20px;
 }
 body{
-	background-color: #DBEDF2
+	
+	background-image: url('fondo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	//background: linear-gradient(45deg,#EEEDED,#90C1EE);
 }
 .div1{
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #2E69FF;
 	height: 100px;
 	vertical-align: middle;
 
@@ -26,6 +31,7 @@ body{
 	padding-bottom: 10px;
 	margin-top: 10px;
 	padding: 10px;
+	background-color: rgba(50, 50, 500, 0.5);
 }
 .buscador h1{
 	display: inline-block;
@@ -94,35 +100,54 @@ button{
 	border: solid;
 	padding: 10px;
 	margin: 10px;
-	background-color: #6173F9;
+	background-color: rgba(50, 50, 500, 0.5);
 	box-shadow: 2px 2px 5px black;
 	border-radius: 5px;
+	font-family: 'Architects Daughter', cursive;
+
 }
 .pub{
+	margin-top: 3px;
 	float: left;
 	width: 45%;
+	overflow-y: auto;
+	height: 90px
+}
+.precio{
+	float:left;
+	font-size: 20px;
+	color: #2F2005;
+}
+.tel{
+	margin-top: 5px;
+	padding: 2px;
+	float: left;
+	background-color: #F6FFA7;
+	margin-bottom: 0px;
+}
+.precio:before{
+	content: "$"
 }
 .nombre{
 
 	width: 50%;
-	margin-top: 0px;
-	margin-bottom: -10px;
+	margin-top: -10px;
+	margin-bottom: -5px;
 	color: blue;
-	font-size: 20px;
+	font-size: 25px;
+	
+	
+
 }
-img{
+.foto{
 
 	border: solid 1px;
 	margin-top: 0px;
 	width: 50%;
 	float: right;
 	clear: bottom ;
-	min-height: 40%
-	
-
-	
-	
-
+	min-height: 60%;
+	max-height: 150px;
 
 }
 @media screen and (max-width:480px){

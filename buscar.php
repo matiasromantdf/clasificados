@@ -32,8 +32,12 @@ $texto = $_GET['busqueda'];
 		while($fila=mysqli_fetch_array($resultado)){
 
 			echo '<div class="item"><p class="nombre">'. $fila['referencia'] .'</p><br>';
-			echo 'telefono: '.$fila['telefono'].'<br>';
-			echo 'Publicación: '.$fila['etiquetas'];	
+			echo '<p class ="pub"> telefono: '.$fila['telefono'].'</p>';
+			echo '<a href="https://elgranero.net/clasificados/archivos/'.$fila['id'].'.jpeg"> <img class="foto" src="archivos/'.$fila['id'].'.jpeg"></img></a>';
+			echo '<p class ="pub">Publicación: '.$fila['etiquetas']."</p>";
+			echo '<p class ="pub">'.$fila['precio']."</p>";
+			
+
 			echo '</div>';
 		}
 
