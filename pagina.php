@@ -12,7 +12,7 @@
 <body>
 	<div class= "div1">
 	<h1>
-		Prueba Clasificados
+		Clasificados
 	</h1>
 	</div>
 	<div class="buscador">
